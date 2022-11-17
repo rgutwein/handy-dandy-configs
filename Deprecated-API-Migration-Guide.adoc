@@ -1,0 +1,55 @@
+= Deprecated-API-Migration-Guide
+:experimental:
+:sectnums:
+:sectlinks:
+:toc:
+:toc-title:
+:toclevels: 2
+
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+
+<<<
+
+// ---------------------------------------------------------------------------------------------
+
+== Deprecated API Migration Overview
+As the Kubernetes API evolves, APIs are periodically reorganized or upgraded. When APIs evolve, the old API is deprecated and eventually removed. This page contains information you need to know when migrating from deprecated API versions to newer and more stable API versions.
+
+== List of API Deprecations
+
+=== API Deprecations - v1.16
+
+* NetworkPolicy	    -- extensions/v1beta1	  [ https://kubernetes.io/docs/reference/using-api/deprecation-guide/#networkpolicy-v116 ]
+* DaemonSet	        -- extensions/v1beta1		[ https://kubernetes.io/docs/reference/using-api/deprecation-guide/#daemonset-v116 ]
+* DaemonSet	        -- apps/v1beta2		      [ https://kubernetes.io/docs/reference/using-api/deprecation-guide/#daemonset-v116 ]
+* Deployment	      -- extensions/v1beta1		[ https://kubernetes.io/docs/reference/using-api/deprecation-guide/#deployment-v116 ]
+* Deployment	      -- apps/v1beta1		      [ https://kubernetes.io/docs/reference/using-api/deprecation-guide/#deployment-v116 ]
+* Deployment	      -- apps/v1beta2		      [ https://kubernetes.io/docs/reference/using-api/deprecation-guide/#deployment-v116 ]
+* StatefulSet	      -- apps/v1beta1		      [ https://kubernetes.io/docs/reference/using-api/deprecation-guide/#statefulset-v116 ]
+* StatefulSet	      -- apps/v1beta2		      [ https://kubernetes.io/docs/reference/using-api/deprecation-guide/#statefulset-v116 ]
+* ReplicaSet	      -- extensions/v1beta1		[ https://kubernetes.io/docs/reference/using-api/deprecation-guide/#replicaset-v116 ]
+* ReplicaSet	      -- apps/v1beta1		      [ https://kubernetes.io/docs/reference/using-api/deprecation-guide/#replicaset-v116 ] 
+* ReplicaSet	      -- apps/v1beta2		      [ https://kubernetes.io/docs/reference/using-api/deprecation-guide/#replicaset-v116 ]
+* PodSecurityPolicy	-- extensions/v1beta1		[ https://kubernetes.io/docs/reference/using-api/deprecation-guide/#psp-v116 ]
+ 
+=== API Deprecations - v1.22
+* Webhook resources	        -- admissionregistration.k8s.io/v1beta1 	[ https://kubernetes.io/docs/reference/using-api/deprecation-guide/#webhook-resources-v122 ]
+* CustomResourceDefinition	-- apiextensions.k8s.io/v1beta1 	        [ https://kubernetes.io/docs/reference/using-api/deprecation-guide/#customresourcedefinition-v122 ]
+* APIService	              -- apiregistration.k8s.io/v1beta1 	      [ https://kubernetes.io/docs/reference/using-api/deprecation-guide/#apiservice-v122 ]
+* TokenReview	              -- authentication.k8s.io/v1beta1	        [ https://kubernetes.io/docs/reference/using-api/deprecation-guide/#tokenreview-v122 ] 
+* SubjectAccessReview 	    -- authorization.k8s.io/v1beta1	          [ https://kubernetes.io/docs/reference/using-api/deprecation-guide/#subjectaccessreview-resources-v122 ]
+* CertificateSigningRequest	-- certificates.k8s.io/v1beta1	          [ https://kubernetes.io/docs/reference/using-api/deprecation-guide/#certificatesigningrequest-v122 ]
+* Lease	                    -- coordination.k8s.io/v1beta1	          [ https://kubernetes.io/docs/reference/using-api/deprecation-guide/#lease-v122 ]
+* Ingress	                  -- extensions/v1beta1	                    [ https://kubernetes.io/docs/reference/using-api/deprecation-guide/#ingress-v122 ]
+* Ingress	                  -- networking.k8s.io/v1beta1	            [ https://kubernetes.io/docs/reference/using-api/deprecation-guide/#ingress-v122 ]
+* IngressClass	            -- networking.k8s.io/v1beta1	            [ https://kubernetes.io/docs/reference/using-api/deprecation-guide/#ingressclass-v122 ]
+* RBAC	                    -- rbac.authorization.k8s.io/v1beta1	    [ https://kubernetes.io/docs/reference/using-api/deprecation-guide/#rbac-resources-v122 ]
+* PriorityClass	            -- scheduling.k8s.io/v1beta1	            [ https://kubernetes.io/docs/reference/using-api/deprecation-guide/#priorityclass-v122 ]
+* Storage                   -- storage.k8s.io/v1beta1 	              [ https://kubernetes.io/docs/reference/using-api/deprecation-guide/#storage-resources-v122 ]
+

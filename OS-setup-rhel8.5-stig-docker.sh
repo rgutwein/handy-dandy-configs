@@ -8,7 +8,7 @@ sudo yum install -y docker-ce docker-ce-cli containerd.io docker-compose-plugin
 # start docker
 sudo systemctl start docker
 # add iw user to docker group (replace iw with other user if necessary, or remove if unsure)
-sudo gpasswd -a iw docker
+sudo gpasswd -a ignyte docker
 # address STIG (high): content_rule_grub2_password
 printf '%s\n' "password" "password" | script -qf -c 'grub2-setpassword' /dev/null
 # address STIG (high): content_rule_package_mcafeetp_installed
